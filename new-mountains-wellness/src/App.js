@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import Header from "./Header";
-import ViewControl from "./ViewControl";
-import Footer from "./Footer";
+import NavBar from "./navbar/navbar";
+import ViewControl from "./components/ViewControl";
+import Footer from "./components/Footer";
 import { ThemeProvider } from "@chakra-ui/react";
+
 
 export default function App() {
   return (
     <ThemeProvider>
-      <div>
-        <Header />
+      <div className="App">
+        <NavBar />
         <ViewControl />
         <Footer />
       </div>
