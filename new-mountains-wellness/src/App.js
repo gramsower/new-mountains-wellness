@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "./components/Navbar";
-import ViewControl from "./components/ViewControl";
+// import ViewControl from "./components/ViewControl";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Announcements from "./components/Announcements";
