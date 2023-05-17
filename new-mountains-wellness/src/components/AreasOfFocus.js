@@ -2,8 +2,10 @@ import React from 'react';
 
 const AreasOfFocus = () =>{
   return (
-    <div>
-      <h3>Areas of Focus</h3>
+    <div id="AreasOfFocus" style={{height:"800px"}}>
+      <h1 style={{fontSize:"50px", padding:"20px"}}>
+        Areas of Focus
+        </h1>
       <div>
         <h4>Pelvic Care</h4>
         <p>
@@ -21,3 +23,5 @@ const AreasOfFocus = () =>{
     </div>
   )
 };
+
+export default AreasOfFocus;

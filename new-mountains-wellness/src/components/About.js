@@ -1,13 +1,14 @@
 import React from "react";
 
-const Calendar = () => {
+
+const About = () => {
   return (
-    <div id="Calendar" style={{height:"800px"}}>
+    <div id="About" style={{height:"800px"}}>
       <h1 style={{fontSize:"50px",padding:"20%"}}>
-        Calendar
+        About
       </h1>
     </div>
   );
 };
 
-export default Calendar;
+export default About;

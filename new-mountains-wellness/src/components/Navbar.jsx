@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { NavLink } from "react-router-dom";
 import {
   Box,
   Flex,
@@ -14,8 +14,9 @@ import {
   IconButton,
   Hide,
   } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import Logo from "./img/NMWSmallTransparent.png";
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import Title from "./Title";
+// import Logo from "./img/NMWSmallTransparent.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -25,35 +26,125 @@ export default function Navbar() {
   return (
     <div id="navFix">
       <Box
-        bg={useColorModeValue("#ecefea", "#141414")}
+        bg={useColorModeValue("gray.100", "gray.900")}
         px={9}
         width={["100%"]}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack w="42%">
+            <Title />
+
             <Show breakpoint="(min-width: 1000px)">
               {" "}
-              <Photo />  
             </Show>         
           </HStack>
           <Flex h={61} alignItems={"center"} justifyContent={"space-between"}>
-            <Hstack spacing={8} alignItems={"center"}
-              <Hstack
+            <HStack spacing={8} alignItems={"center"}>
+              <HStack
                 as={"nav"}
                 spacing={4}
                 display={{ base: "none", md: "flex" }}
                 id="myDIV"
                 >
                   <Button className="btnRes">
-                    <a href="#Home">
+                    <a href="#About">
                       {" "}
-                      <b>Home</b>
-
+                      <b>About</b>
                     </a>
                   </Button>
-              </Hstack>
+
+                  <Button className="btnRes">
+                    <a href="#Announcements">
+                      <b>Announcements</b>
+                    </a>
+                  </Button>
+
+                  <Button className="btnRes">
+                    <a href="#AreasOfFocus">
+                      <b>Areas of Focus</b>
+                    </a>
+                  </Button>
+
+                  <Button className="btnRes">
+                    <a href="#Calendar">
+                      <b>Calendar</b>
+                    </a>
+                  </Button>
+
+                  <Button className="btnRes">
+                    <a href="#ContactMe">
+                      <b>Contact Me</b>
+                    </a>
+                  </Button>
+
+                  <Button className="btnRes">
+                    <a href="#Map">
+                      <b>Map</b>
+                    </a>
+                  </Button>
+
+                  <Button className="btnRes">
+                    <a href="#YogaTherapy">
+                      <b>YogaTherapy</b>
+                    </a>
+                  </Button>
+              </HStack>
+            </HStack>
           </Flex>
 
+          <Flex alignItems={"center"}>
+            <Stack direction={"row"} spacing={7}>
+              <Button onClick={toggleColorMode}>
+                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+              </Button>
+
+            </Stack>           
+          </Flex>
+          <IconButton
+            size={"md"}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            aria-label={"Open Menu"}
+            display={{ md: "none" }}
+            onClick={isOpen ? onClose : onOpen}
+            />
+          {isOpen ? (
+            <Box pb={4} display={{ md: "none" }}>
+              <Stack as={"nav"} spacing={4}>
+                <Button  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}>
+                  <a href="#Home">
+                    {" "}
+                    <b>Home</b>
+                  </a>
+                </Button>
+                <Button  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}>
+                  <a href="#Home">
+                    {" "}
+                    <b>Home</b>
+                  </a>
+                </Button>
+                <Button  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}>
+                  <a href="#Home">
+                    {" "}
+                    <b>Home</b>
+                  </a>
+                </Button>
+              </Stack>
+            </Box>
+          ) : null}
         </Flex>
       </Box>
     </div>
+  );
+}

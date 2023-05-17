@@ -1,18 +1,28 @@
 import React, { useState } from "react";
-import NavBar from "./navbar/navbar";
+import NavBar from "./components/Navbar";
 import ViewControl from "./components/ViewControl";
 import Footer from "./components/Footer";
-import { ThemeProvider } from "@chakra-ui/react";
-
+import About from "./components/About";
+import Announcements from "./components/Announcements";
+import AreasOfFocus from "./components/AreasOfFocus";
+import Calendar from "./components/Calendar";
+import ContactMe from "./components/ContactMe";
+import Map from "./components/Map";
+import YogaTherapy from "./components/YogaTherapy";
 
 export default function App() {
   return (
-    <ThemeProvider>
+
       <div className="App">
         <NavBar />
-        <ViewControl />
+        <About />
+        <Announcements/>
+        <AreasOfFocus />
+        <Calendar />
+        <ContactMe />
+        <Map />
+        <YogaTherapy />
         <Footer />
       </div>
-    </ThemeProvider>
   );
 }
