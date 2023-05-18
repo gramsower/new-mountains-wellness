@@ -15,10 +15,10 @@ export default function App() {
 
       <div className="App">
         <NavBar />
-        <About />
         <Announcements/>
-        <AreasOfFocus />
         <Calendar />
+        <About />
+        <AreasOfFocus />
         <ContactMe />
         <Map />
         <YogaTherapy />
