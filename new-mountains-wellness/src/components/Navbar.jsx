@@ -25,23 +25,22 @@ export default function Navbar() {
   return (
     <div id="navFix">
       <Box
-        bg={useColorModeValue("gray.100", "gray.900")}
+        bg={useColorModeValue("green.100", "gray.900")}
         px={9}
         width={["100%"]}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <HStack w="42%">
+          <HStack w="20%">
             <Title />
-
-            <Show breakpoint="(min-width: 1000px)">
+{/*             <Show breakpoint="(min-width: 1000px)">
               {" "}
-            </Show>         
+            </Show>      */}    
           </HStack>
           <Flex h={61} alignItems={"center"} justifyContent={"space-between"}>
             <HStack spacing={8} alignItems={"center"}>
               <HStack
                 as={"nav"}
-                spacing={4}
+                spacing={2}
                 display={{ base: "none", md: "flex" }}
                 id="myDIV"
                 >
@@ -84,9 +83,10 @@ export default function Navbar() {
 
                   <Button className="btnRes">
                     <a href="#YogaTherapy">
-                      <b>YogaTherapy</b>
+                      <b>Yoga Therapy</b>
                     </a>
                   </Button>
+
               </HStack>
             </HStack>
           </Flex>
@@ -96,9 +96,9 @@ export default function Navbar() {
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
-
             </Stack>           
           </Flex>
+
           <IconButton
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -108,11 +108,11 @@ export default function Navbar() {
             />
           {isOpen ? (
             <Box pb={4} display={{ md: "none" }}>
-              <Stack as={"nav"} spacing={4}>
+              <Stack as={"nav"} spacing={3}>
                 <Button  onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
-                    transform: "scale(1.2)",
+                    transform: "scale(1.0)",
                   }}>
                   <a href="#Home">
                     {" "}
@@ -122,21 +122,21 @@ export default function Navbar() {
                 <Button  onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
-                    transform: "scale(1.2)",
+                    transform: "scale(1.0)",
                   }}>
-                  <a href="#Home">
+                  <a href="#Announcements">
                     {" "}
-                    <b>Home</b>
+                    <b>Announcements</b>
                   </a>
                 </Button>
                 <Button  onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
-                    transform: "scale(1.2)",
+                    transform: "scale(1.0)",
                   }}>
-                  <a href="#Home">
+                  <a href="#AreasOfFocus">
                     {" "}
-                    <b>Home</b>
+                    <b>Areas of Focus</b>
                   </a>
                 </Button>
               </Stack>

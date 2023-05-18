@@ -4,8 +4,8 @@ const Title = () => {
   return (
     <Text
       as="b"
-      fontSize={{ base: "18px", md: "24px", lg: "30px" }}
-      style={{ textShadow: "#FC0 1px 0 10px" }}
+      fontSize={{ base: "12px", md: "18px", lg: "20px" }}
+      style={{ textShadow: "" }}
     >
       New Mountains Wellness
     </Text>
