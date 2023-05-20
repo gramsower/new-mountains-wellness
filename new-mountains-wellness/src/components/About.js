@@ -1,19 +1,16 @@
 import React from "react";
+import {Box, Heading, Flex } from '@chakra-ui/react';
+import Theme from './styling/theme';
 
-
-const About = () => {
+export default function About() {
   return (
-    <div id="About" style={{height:"400px"}}>
-      <h1 style={{fontSize:"50px",padding:"20%"}}>
+    <>
+      <Box textStyle='h1'>
         Massage, Yoga Therapy & Pelvic Care
-      </h1>
-      <p>
-        "We are volcanoes. When we women offer our experience as our truth, as human truth, all the maps change.
-
-      </p>
-
-    </div>
+      </Box>
+        <Box textStyle='p'>
+        "We are volcanoes. When we women offer our experience as our truth, as human truth, all the maps change."
+      </Box>
+    </>
   );
 };
-
-export default About;

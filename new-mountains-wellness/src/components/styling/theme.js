@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import "@fontsource/source-sans-pro";
 
 const theme = extendTheme ({
   colors: {
@@ -54,6 +55,34 @@ const theme = extendTheme ({
     wider: "0.05em",
     widest: "0.1em",
   },
+
+  textStyles: {
+    h1: {
+      fontSize: ['19px', '24px'],
+      fontWeight: 'bold',
+      lineHeight: '110%',
+      letterSpacing: '-1%',
+    },
+    h2: {
+      fontSize: ['14px', '20px'],
+      fontWeight: 'semibold',
+      lineHeight: '110%',
+      letterSpacing: '-2%',
+    },
+    h3: {
+      fontSize: ['12px', '16px'],
+      fontWeight: '',
+      lineHeight: '110%',
+      letterSpacing: '-2%',
+    },
+    p: {
+      fontSize: ['12px', '16px'],
+      fontWeight: '',
+      lineHeight: '110%',
+      letterSpacing: '-2%',
+  },
+}
+
 });
 
 export default theme;
