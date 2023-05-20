@@ -15,9 +15,9 @@ export default function App() {
 
       <div className="App">
         <NavBar />
+        <About />
         <Announcements/>
         <Calendar />
-        <About />
         <AreasOfFocus />
         <ContactMe />
         <Map />

@@ -16,7 +16,6 @@ import {
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import Title from "./Title";
 // import Logo from "./img/NMWSmallTransparent.png";
-import "./Navbar.css";
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -25,19 +24,19 @@ export default function Navbar() {
   return (
     <div id="navFix">
       <Box
-        bg={useColorModeValue("green.100", "gray.900")}
+        bg={useColorModeValue("lightGreen", "black")}
         px={9}
         width={["100%"]}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack w="20%">
             <Title />
-{/*             <Show breakpoint="(min-width: 1000px)">
+            <Show breakpoint="(min-width: 1000px)">
               {" "}
-            </Show>      */}    
+            </Show>
           </HStack>
           <Flex h={61} alignItems={"center"} justifyContent={"space-between"}>
-            <HStack spacing={8} alignItems={"center"}>
+            <HStack spacing={0} alignItems={"center"}>
               <HStack
                 as={"nav"}
                 spacing={2}
@@ -100,7 +99,7 @@ export default function Navbar() {
           </Flex>
 
           <IconButton
-            size={"md"}
+            size={"sm"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
@@ -108,11 +107,11 @@ export default function Navbar() {
             />
           {isOpen ? (
             <Box pb={4} display={{ md: "none" }}>
-              <Stack as={"nav"} spacing={3}>
+              <Stack as={"nav"} spacing={1}>
                 <Button  onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
-                    transform: "scale(1.0)",
+                    transform: "scale(1.2)",
                   }}>
                   <a href="#Home">
                     {" "}
@@ -122,7 +121,7 @@ export default function Navbar() {
                 <Button  onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
-                    transform: "scale(1.0)",
+                    transform: "scale(1.2)",
                   }}>
                   <a href="#Announcements">
                     {" "}
