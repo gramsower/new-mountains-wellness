@@ -19,19 +19,21 @@ const theme = extendTheme ({
   },
 
   fontSizes: {
-    xs: "12px",
-    sm: "14px",
-    md: "16px",
-    lg: "18px",
-    xl: "20px",
-    "2xl": "24px",
-    "3xl": "28px",
-    "4xl": "36px",
-    "5xl": "48px",
-    "6xl": "64px",
+    xs: ".75rem",
+    sm: ".875rem",
+    md: "1rem",
+    lg: "1.125rem",
+    xl: "1.25rem",
+    "2xl": "1.5rem",
+    "3xl": "1.875rem",
+    "4xl": "2.24rem",
+    "5xl": "3rem",
+    "6xl": "3.75rem",
   },
   
   fontWeights: {
+    extraLight: 200,
+    light: 300,
     normal: 400,
     medium: 500,
     mediumBold: 600,
@@ -59,38 +61,44 @@ const theme = extendTheme ({
 
   textStyles: {
     h1: {
-      fontSize: ['19px', '24px'],
+      fontSize: ["xs", "sm", "md", "lg"],
       fontWeight: 'bold',
       lineHeight: '110%',
       letterSpacing: '-1%',
     },
     h2: {
-      fontSize: ['14px', '20px'],
+      fontSize: ["xs", "sm", "md", "lg"],
       fontWeight: 'semibold',
       lineHeight: '110%',
       letterSpacing: '-2%',
     },
     h3: {
-      fontSize: ['12px', '16px'],
+      fontSize: ["xs", "sm", "md", "lg"],
       fontWeight: '',
       lineHeight: '110%',
       letterSpacing: '-2%',
     },
     pItal: {
-      fontSize: ['12px', '16px'],
+      fontSize: ["xs", "sm", "md", "lg"],
       fontWeight: '200',
       fontStyle: 'italic',
       lineHeight: '110%',
       letterSpacing: '-2%',
-  },
-  p: {
-    fontSize: ['12px', '16px'],
-    fontWeight: '200',
-    lineHeight: '110%',
-    letterSpacing: '-2%',
-  },
-}
+    },
+    p: {
+      fontSize: ["xs", "sm", "md", "lg"],
+      fontWeight: 'light',
+      lineHeight: '110%',
+      letterSpacing: '-2%',
+    },
 
+    link: {
+      fontSize: ["xs", "sm", "md", "lg"],
+      fontWeight: 'extraLight',
+      lineHeight: '100%',
+      letterSpacing: '-2%',
+    }
+  }
 });
 
 export default theme;

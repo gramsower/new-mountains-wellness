@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NavBar from "./components/Navbar";
 // import ViewControl from "./components/ViewControl";
 import Footer from "./components/Footer";
@@ -12,7 +12,6 @@ import YogaTherapy from "./components/YogaTherapy";
 
 export default function App() {
   return (
-
       <div className="App">
         <NavBar />
         <About />
@@ -21,7 +20,6 @@ export default function App() {
         <AreasOfFocus />
         <ContactMe />
         <Map />
-        <YogaTherapy />
         <Footer />
       </div>
   );

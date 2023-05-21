@@ -25,8 +25,8 @@ const Map = () => {
   }, []);
 
   return (
-    <HStack spacing='10px'>
-      <Box m='20px' w='400px' borderWidth="1px" rounded="1g">
+    <HStack spacing='20px'>
+      <Box m='20px' w='400px' borderWidth="1px">
         <Box textStyle="h1">
           Contact Me
         </Box>
@@ -44,10 +44,8 @@ const Map = () => {
           </VStack>
         </FormControl>
       </Box>
-
-      <Spacer />
       <Box dg='grey' borderWidth="1px" rounded="lg" overflow="hidden" w='400px' height='400px' m='20px' padding='20px' textStyle='h1'>
-        Location
+        Studio Location
         <Box display='flex' alignItems='baseline'>
           <div ref={mapContainerRef} style={{ width: '90%', height: '400px', alignmentBaseline: 'center'}} />
         </Box>
