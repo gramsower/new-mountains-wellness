@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Box,
   Flex,
   Button,
-  useColorModeValue,
   Stack,
   useColorMode,
   Show,
@@ -12,31 +11,35 @@ import {
   useDisclosure,
   IconButton,
   Hide,
+  Image
   } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
+import { useMemo } from "react";
 import Title from "./Title";
-// import Logo from "./img/NMWSmallTransparent.png";
+import logo from "../img/logoSmall.png";
+
+
 
 export default function Navbar() {
-  const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const imagePath = useMemo(() => "./img/logoSmall.png", []);
 
   return (
-    <div id="navFix">
       <Box
-        bg={useColorModeValue("lightGreen", "black")}
+        bg="lightGreen"
         px={9}
         width={["100%"]}
+        position="fixed"
       >
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <Flex h={12} alignItems={"center"} justifyContent={"space-between"}>
           <HStack w="20%">
             <Title />
+            <Image src="./img/logoSmall.png" alt="New Mountains Wellness" />
             <Show breakpoint="(min-width: 1000px)">
               {" "}
             </Show>
           </HStack>
-          <Flex h={61} alignItems={"center"} justifyContent={"space-between"}>
-            <HStack spacing={0} alignItems={"center"}>
+          <HStack spacing={0} alignItems={"center"}>
               <HStack
                 as={"nav"}
                 spacing={2}
@@ -79,32 +82,20 @@ export default function Navbar() {
                       <b>Map</b>
                     </a>
                   </Button>
-
-                  <Button className="btnRes">
-                    <a href="#YogaTherapy">
-                      <b>Yoga Therapy</b>
-                    </a>
-                  </Button>
-
               </HStack>
             </HStack>
-          </Flex>
-
-          <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={7}>
-              {/* <Button onClick={toggleColorMode}> */}
-                {/* {colorMode === "light" ? <MoonIcon /> : <SunIcon />} */}
-              {/* </Button> */}
+{/*           <Flex alignItems={"center"}>
+            <Stack direction={"row"} spacing={1}>
             </Stack>           
           </Flex>
-
+ */}
           <IconButton
             size={"sm"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
-            />
+          />
           {isOpen ? (
             <Box pb={4} display={{ md: "none" }}>
               <Stack as={"nav"} spacing={1}>
@@ -143,6 +134,5 @@ export default function Navbar() {
           ) : null}
         </Flex>
       </Box>
-    </div>
   );
 }

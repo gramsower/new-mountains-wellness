@@ -34,6 +34,7 @@ const theme = extendTheme ({
   fontWeights: {
     normal: 400,
     medium: 500,
+    mediumBold: 600,
     bold: 700,
   },
 
@@ -75,11 +76,18 @@ const theme = extendTheme ({
       lineHeight: '110%',
       letterSpacing: '-2%',
     },
-    p: {
+    pItal: {
       fontSize: ['12px', '16px'],
-      fontWeight: '',
+      fontWeight: '200',
+      fontStyle: 'italic',
       lineHeight: '110%',
       letterSpacing: '-2%',
+  },
+  p: {
+    fontSize: ['12px', '16px'],
+    fontWeight: '200',
+    lineHeight: '110%',
+    letterSpacing: '-2%',
   },
 }
 
