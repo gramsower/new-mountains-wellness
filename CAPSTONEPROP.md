@@ -14,7 +14,7 @@ This project will produce a website for a yoga and massage business with a focus
     - Publicly avilable resources, including video resources
     - 'Contact me' form
 
-  - Include a secure client (user) portal containing:
+~~ - Include a secure client (user) portal containing:
     - Patient care notes / treatment records
     - Invoicing + connection to company's billing system
     - Private online resources available to only clients
@@ -28,7 +28,7 @@ This project will produce a website for a yoga and massage business with a focus
     - Ability to generate new notes / records for each client
     - Ability to generate invoices based upon treatment / visits per client
     - Connection to payment processing service
-    - Possibly, this will be made into an app using React Native. 
+    - Possibly, this will be made into an app using React Native.~~
 
 ### Minimum Viable Product
 
@@ -37,17 +37,17 @@ This project will produce a website for a yoga and massage business with a focus
   - Ability to handle multimedia --  streaming videos, pictures. Client already has a youtube channel, so we will piggyback off of that going forward.
   - Responsive web design with minimum of three use cases: phone, tablet, desktop. Review Semantic-UI and Material-UI.
   - 'Contact me' form
-  - Multiple views to organize information + resources available to all site users
+  ~~- Multiple views to organize information + resources available to all site users
   - Calendar displaying upcoming public events (group yoga, meditation, etc.) .
-  - Owner portal allowing changes to calendar (this is the minimum portal functionality)
+  - Owner portal allowing changes to calendar (this is the minimum portal functionality)~~
 
 ### Tech Stack
 
-  - Frontend: Javascript/React, Next.js, 
-  - Backend: Likely NoSQL, possibly Firebase. 
+  - Frontend: Javascript/React, ~~Next.js,~~ 
+  - ~~Backend: Likely NoSQL, possibly Firebase.~~ 
 
 ### Notes / Scratchpad
-- Authentication to be implemented with two levels:
+~~- Authentication to be implemented with two levels:
 
   - Business Owner: 
     - will need access to all site functions, including:
@@ -61,8 +61,9 @@ This project will produce a website for a yoga and massage business with a focus
     - ability to make and change appointments on calendar (availability is set by owner)
     - view all previous appointments
     - view all previous invoices (paid and outstanding)
-    - view treatment notes (limited view?)
+    - view treatment notes (limited view?)~~
 
+- Update: May 7, 2023: No API or other public resources available for Noterro, the current client management system used.  No backend possible.
 
 - April 6, 2023, and April 27, 2023:
   * Planning for first project meeting, time/date: May 5, 2023, 9:30 am (1 hr duration)
