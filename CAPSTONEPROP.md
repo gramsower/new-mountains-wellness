@@ -14,21 +14,21 @@ This project will produce a website for a yoga and massage business with a focus
     - Publicly avilable resources, including video resources
     - 'Contact me' form
 
-~~ - Include a secure client (user) portal containing:
-    - Patient care notes / treatment records
-    - Invoicing + connection to company's billing system
-    - Private online resources available to only clients
-    - Individualized schedule showing upcoming visits for only that client
-    - Possibly, this will be made into an app using React Native. 
+~~Include a secure client (user) portal containing:~~
+    - ~~Patient care notes / treatment records~~
+    - ~~Invoicing + connection to company's billing system~~
+    - ~~Private online resources available to only clients~~
+    - ~~Individualized schedule showing upcoming visits for only that client~~
+    - ~~Possibly, this will be made into an app using React Native.~~
 
-  - Include a secure owner (admin) portal with:
-    - Access to a calendar with full CRUD capability to schedule, move and/or update schedules, events, classes, etc.
-    - Access to client care notes/ treatment records for each client of the business
-      - NOTE: depending upon legal (HIPAA) requirements, records may or may not have full CRUD capability. 
-    - Ability to generate new notes / records for each client
-    - Ability to generate invoices based upon treatment / visits per client
-    - Connection to payment processing service
-    - Possibly, this will be made into an app using React Native.~~
+  - ~~Include a secure owner (admin) portal with:~~
+    - ~~Access to a calendar with full CRUD capability to schedule, move and/or update schedules, events, classes, etc.~~
+    - ~~Access to client care notes/ treatment records for each client of the business~~
+      - ~~NOTE: depending upon legal (HIPAA) requirements, records may or may not have full CRUD capability.~~
+    - ~~Ability to generate new notes / records for each client~~
+    - ~~Ability to generate invoices based upon treatment / visits per client~~
+    - ~~Connection to payment processing service~~
+    - ~~Possibly, this will be made into an app using React Native.~~
 
 ### Minimum Viable Product
 
@@ -37,9 +37,9 @@ This project will produce a website for a yoga and massage business with a focus
   - Ability to handle multimedia --  streaming videos, pictures. Client already has a youtube channel, so we will piggyback off of that going forward.
   - Responsive web design with minimum of three use cases: phone, tablet, desktop. Review Semantic-UI and Material-UI.
   - 'Contact me' form
-  ~~- Multiple views to organize information + resources available to all site users
-  - Calendar displaying upcoming public events (group yoga, meditation, etc.) .
-  - Owner portal allowing changes to calendar (this is the minimum portal functionality)~~
+  ~~Multiple views to organize information + resources available to all site users~~
+  - ~~Calendar displaying upcoming public events (group yoga, meditation, etc.) .~~
+  - ~~Owner portal allowing changes to calendar (this is the minimum portal functionality)~~
 
 ### Tech Stack
 
@@ -47,7 +47,7 @@ This project will produce a website for a yoga and massage business with a focus
   - ~~Backend: Likely NoSQL, possibly Firebase.~~ 
 
 ### Notes / Scratchpad
-~~- Authentication to be implemented with two levels:
+~~- Authentication to be implemented with two levels:~~
 
   - Business Owner: 
     - will need access to all site functions, including:

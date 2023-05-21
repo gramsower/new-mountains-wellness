@@ -53,13 +53,15 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Application Layout & Component Tree
 
-![application layout diagram](new-mountains-wellness/src/img/layout.jpg "Application layout and component tree.")
+![application layout diagram] (/src/img/layout.jpg "Application layout and component tree.")
 
 ### Known Bugs and Limitations
+* Application layout diagram not loading correctly in this readme. Suspect is caused by same issue preventing local assets from loading in site.
 * NavBar routes not working correctly
-* Styling is significantly limited
+* Mapbox key currently exposed. [Note: will disable key after project review and will ensure new key is private.]
+* Styling is significantly limited and/or broken.
 * Footer not displaying correctly
-* Map lacks focus on location
+* Map lacks focus pin for business location
 * Contact me form not yet functional
 * Missing information
 * Images load from remote source, local images not loading correctly
