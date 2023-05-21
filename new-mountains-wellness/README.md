@@ -53,7 +53,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Application Layout & Component Tree
 
-![application layout diagram] (/src/img/layout.jpg "Application layout and component tree.")
+![application layout diagram] (/src/img/layout.jpg) "Application layout and component tree."
 
 ### Known Bugs and Limitations
 * Application layout diagram not loading correctly in this readme. Suspect is caused by same issue preventing local assets from loading in site.
