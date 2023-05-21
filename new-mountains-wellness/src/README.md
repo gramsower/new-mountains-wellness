@@ -53,7 +53,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Application Layout & Component Tree
 
-![application layout diagram](/src/img/layout.jpg "Application layout and component tree.")
+![application layout diagram](new-mountains-wellness/src/img/layout.jpg "Application layout and component tree.")
 
 ### Known Bugs and Limitations
 * NavBar routes not working correctly
